@@ -7,7 +7,7 @@
 html,body {
   height: 100%;
   width: 100%;
-  background: radial-gradient(circle,#FF9A1F 30%, #E85A00 100%,#b14400 100%);
+  background: radial-gradient(circle,#FF9A1F 20%, #E85A00 70%,#b14400 100%);
 }
 main{
   padding: 2px 50px;
@@ -17,6 +17,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   height: fit-content;
+  transition: all 0.3s ease-in-out;
 }
 .right{
   display: flex;
@@ -35,6 +36,17 @@ nav{
   align-items: center;
   background-color: white;
   border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+}
+.Place:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.Place:active{
+  transform: translateY(0px);
+  opacity: 80%;
+  box-shadow: 0 0 0 transparent;
 }
 .Place img{
   height: 20px;
@@ -45,6 +57,8 @@ nav{
 .Products{
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 10;
   gap: 10px;
 }
 .Product{
@@ -55,6 +69,17 @@ nav{
   align-items: center;
   background-color: white;
   border-radius: 200px;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+}
+.Product:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.Product:active{
+  transform: translateY(0px);
+  opacity: 80%;
+  box-shadow: 0 0 0 transparent;
 }
 .Custom{
   display: flex;
@@ -65,12 +90,24 @@ nav{
   background-color: rgba(255, 255, 255, 0.5);
   color: white;
   border-radius: 200px;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+}
+.Custom:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.Custom:active{
+  transform: translateY(0px);
+  opacity: 80%;
+  box-shadow: 0 0 0 transparent;
 }
 .eyeCatch{
   display: flex;
   justify-content: space-between;
   color: white;
   margin-top: 80px;
+  transition: all 0.3s;
 }
 .leftE{
   width: 20%;
@@ -93,6 +130,7 @@ nav{
   justify-content: center;
   width: 60%;
   position: relative;
+  z-index: 0;
 }
 .middleE h1{
   font-size: 225px;
@@ -102,6 +140,11 @@ nav{
 .middleE img{
   position: absolute;
   height: 400px;
+  transition: all 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.middleE img:hover{
+  transform: translateY(-8px);
+  filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.5));
 }
 .rightE{
   width: 20%;
@@ -125,18 +168,36 @@ nav{
   width: 55px;
   border-radius: 100%;
   background-color: #42CFC7;
+  transform: scale(1);
+  transition: transform 0.15s ease-in-out;
+}
+.blue:hover{
+  transform: scale(1.1);
+  transition: transform 0.15s ease-in-out;
 }
 .orange{
   height: 55px;
   width: 55px;
   border-radius: 100%;
   background-color: #FF7900;
+  transform: scale(1);
+  transition: transform 0.15s ease-in-out;
+}
+.orange:hover{
+  transform: scale(1.1);
+  transition: transform 0.15s ease-in-out;
 }
 .red{
   height: 55px;
   width: 55px;
   border-radius: 100%;
   background-color: #F20A3D;
+  transform: scale(1);
+  transition: transform 0.15s ease-in-out;
+}
+.red:hover{
+  transform: scale(1.1);
+  transition: transform 0.15s ease-in-out;
 }
 input[type="radio"]{
   
@@ -167,8 +228,8 @@ input[type="radio"]:checked + label div{
   height: 55px;
   width: 55px;
   border-radius: 100%;
-  border: 1px solid white;
-  font-size: large;
+  border: 1.75px solid white;
+  font-size: 15px;
 }
 footer{
   display: flex;
@@ -188,6 +249,18 @@ footer{
   align-items: center;
   background-color: white;
   border-radius: 200px;
+  letter-spacing: -1px;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+}
+.see:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.see:active{
+  transform: translateY(0px);
+  opacity: 80%;
+  box-shadow: 0 0 0 transparent;
 }
 .see svg{
   height: 15px;
@@ -206,4 +279,11 @@ footer{
   width: 80px;
   height: 0px;
   border: 1px solid white;
+}
+a{
+  display: inline-block;
+}
+a img{
+  display: block;
+  height: 20px;
 }
