@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle,#FF9A1F 30%, #E85A00 100%,#b14400 100%);
+}
+main{
+  padding: 2px 50px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+}
+.right{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.right span{
+  color: white;
+  font-size: large;
+}
+.Place{
+  display: flex;
+  height: fit-content;
+  padding: 10px 20px;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+}
+.Place img{
+  height: 20px;
+}
+#logo{
+  height: 70px;
+}
+.Products{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.Product{
+  display: flex;
+  height: fit-content;
+  padding: 10px 20px;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+  border-radius: 200px;
+}
+.Custom{
+  display: flex;
+  height: fit-content;
+  padding: 10px 20px;
+  gap: 10px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  border-radius: 200px;
+}
+.eyeCatch{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 80px;
+}
+.leftE{
+  width: 20%;
+  padding-top: 60px;
+}
+.leftE h1{
+  font-size: 40px;
+  font-weight: 900;
+  transform: scaleY(1.5);
+  line-height: 38px;
+}
+.leftE p{
+  margin-top: 25px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+}
+.middleE{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  position: relative;
+}
+.middleE h1{
+  font-size: 225px;
+  font-weight: 900;
+  transform: scaleY(1.9);
+}
+.middleE img{
+  position: absolute;
+  height: 400px;
+}
+.rightE{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15px;
+}
+.rightE #Choose{
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.color{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 15px;
+}
+.blue{
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  background-color: #42CFC7;
+}
+.orange{
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  background-color: #FF7900;
+}
+.red{
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  background-color: #F20A3D;
+}
+input[type="radio"]{
+  
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border-width: 0;
+}
+input[type="radio"]:checked + label div{
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+.size{
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  gap: 15px;
+}
+.num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  border: 1px solid white;
+  font-size: large;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 135px;
+}
+.socials{
+  height: 20px;
+  display: flex;
+  gap: 40px;
+}
+.see{
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+  border-radius: 200px;
+}
+.see svg{
+  height: 15px;
+}
+.tag{
+  color: white;
+  letter-spacing: 3px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.tag div{
+  padding: 0px 20px;
+}
+.line{
+  width: 80px;
+  height: 0px;
+  border: 1px solid white;
+}
